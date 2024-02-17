@@ -4,11 +4,11 @@ body {
   margin: 0;
   padding: 0;
   line-height: 1.5em;
-  background-color: #f8f8f8;
+  background-color: #f5ebe0;
 }
 header {
-  background-color: lightgray;
-  color: #333;
+  background-color: #dba39a;
+  color: #000;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -36,6 +36,7 @@ nav ul li a {
   position: relative;
   text-decoration: none;
   cursor: pointer;
+  color: #000;
 }
 nav ul li a:hover {
   color: #fff;
@@ -48,17 +49,46 @@ nav ul li a::before {
   height: 2px;
   bottom: 0;
   left: 0;
-  background-color: #333;
+  background-color: #000;
   transform: scaleX(0);
   transition: transform 0.3s ease;
 }
 nav ul li a:hover::before {
   transform: scaleX(1);
 }
+nav ul li a.download {
+  color: #0000ee;
+}
+main {
+  background-color: #f0dbdb;
+}
 #about {
   position: relative;
   top: 100px;
   left: 250px;
+
+  width: 100%;
+}
+#about span {
+  text-transform: capitalize;
+  font-size: 36px;
+  display: inline-block;
+  margin: 5px 0 10px;
+  color: #000;
+}
+#about i {
+  font-size: 30px;
+  padding-right: 15px;
+  cursor: pointer;
+}
+#about .fa-linkedin {
+  color: #0a66c2;
+}
+#about .fa-facebook {
+  color: #0165e1;
+}
+#about .fa-twitter {
+  color: #1da1f2;
 }
 #about p {
   width: 40%;
@@ -82,9 +112,6 @@ section#skill {
   justify-content: space-evenly;
 }
 
-footer {
-  background-color: #ccc;
-}
 #skill img,
 #projects img {
   transition: transform o.3s ease-in-out;
@@ -117,17 +144,30 @@ footer a {
   text-decoration: none;
   cursor: pointer;
 }
+#projects a {
+  color: #da8a7e;
+  font-weight: 600;
+}
 #projects a:hover {
   text-decoration: underline;
 }
 #contact {
   text-align: center;
 }
+#contact a {
+  margin-bottom: 20px;
+  display: inline-block;
+}
 #contact i {
   font-size: 20px;
   margin-right: 5px;
 }
 
+textarea {
+  width: 200px;
+  height: 50px;
+  resize: none;
+}
 footer {
   display: flex;
   justify-content: space-evenly;
@@ -143,4 +183,11 @@ footer ul li {
 }
 footer a {
   color: #000;
+}
+button {
+  padding: 10px 15px 10px 15px;
+  border-radius: 8px;
+  background: #da958b;
+  color: white;
+  border: none;
 }

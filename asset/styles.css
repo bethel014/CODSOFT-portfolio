@@ -59,7 +59,7 @@
 }
 
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 400;
   margin: 0;
   padding: 0;
@@ -135,7 +135,7 @@ main {
   font-size: 36px;
   display: inline-block;
   margin: 5px 0 10px;
-  color: #000;
+  color: #df4e37;
 }
 #about i {
   font-size: 30px;

@@ -4,7 +4,8 @@
     text-align: left !important;
   }
   .skill-container {
-    display: block !important;
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
   }
   .skill-container img {
     width: 200px !important;
@@ -172,18 +173,14 @@ section#skill {
   justify-content: space-between;
 }
 
-#skill img,
-#projects img {
+#skill img {
   transition: transform 0.3s ease-in-out;
 }
-#skill img:hover,
-#projects img:hover {
+#skill img:hover {
   transform: scale(1.5);
   cursor: pointer;
 }
-#projects img:hover {
-  transform: scale(1.1);
-}
+
 section#projects h2 {
   margin-bottom: 20px;
 }
